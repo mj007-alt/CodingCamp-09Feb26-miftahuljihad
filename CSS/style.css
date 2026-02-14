@@ -1,0 +1,256 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f2f2;
+}
+.garis {
+  border: none;
+  height: 3px;
+  background: #aeb6c2;
+  margin: 40px 0;
+}
+.logo{
+    height: 75px;
+    width: 75px;
+    background-color: lightgray;
+    border-radius: 50%;
+    background-image: url(https://uploads-ssl.webflow.com/61af164800e38cf1b6c60b55/62bbfbb189b700fc937e2e70_Logo-RevoU-5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section {
+  padding: 40px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#contact-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.testimoni-image{
+    height: 400px;
+    width: 600px;
+    background-color: lightgray;
+    border-radius: 10px;
+    background-image: url(https://myoona.id/content/dam/oona/aem-images/blog/tips-berwisata-jepang-budget.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Testimoni */
+.testimoni {
+  max-width: 600px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.quote {
+  margin-top: 10px;
+}
+
+.author {
+  margin-left: 70px;
+  margin-top: 30px;
+  color: #555;
+}
+
+/* Contact */
+.contact-us {
+    height: 600px;
+    width: 400px;
+    background-color: lightgoldenrodyellow;
+}
+
+.input-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 18px 20px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 3px solid #cfd8e3;
+  background-color:white;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+}
+
+.textbox {
+  width: 100%;
+  max-width: 280px;
+  padding: 18px 20px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: 3px solid #cfd8e3;
+  background-color:white;
+  outline: none;
+  transition: 0.2s;
+}
+
+.select-wrap {
+position: relative;
+  display: inline-block;
+}
+
+/* hilangkan arrow default */
+.selectbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding-right: 30px; /* ruang untuk segitiga */
+  cursor: pointer;
+}
+
+/* icon segitiga */
+.select-wrap::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.contact-us input,
+.contact-us select {
+  padding: 10px;
+  margin-bottom: 12px;
+  margin-left: 40px;
+  display:block;
+  width: 320px;
+}
+
+.contact-us button {
+  padding: 12px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-us button:hover {
+  background: #1a252f;
+}
+
+/* Foto Profil */
+.author-wrap {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.foto-profil{
+    height: 75px;
+    width: 75px;
+    background-color: lightgray;
+    border-radius: 50%;
+    background-image: url(https://w7.pngwing.com/pngs/665/132/png-transparent-user-defult-avatar-thumbnail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Rapikan author lama */
+.author {
+    font-style: italic;
+    margin: 0;
+}
+
+.features {
+  max-width: 800px;
+}
+
+.feature-desc {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3c4752;
+  margin-bottom: 28px;
+}
+
+/* list */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* tiap baris */
+.feature-item {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.icon-penomoran{
+    margin-top: 20px;
+    margin-left: 230px;
+    height: 45px;
+    width: 100px;
+    background-color: #eff3f8;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+/* teks kanan */
+.feature-text {
+  color: #6f8193;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* OUR PACKAGE PAGES */
+.tittle-our-package{
+    height: 200px;
+    background-color: lightgoldenrodyellow;
+}
+.destination {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 80px;
+  padding: 60px 80px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.list-destination {
+  max-width: 320px;
+}
+.icon {
+  height: 150px;
+  width: 150px;
+  margin-left: 230px;
+  background-color: lightgray;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.list-destination h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #374151;
+}
+.list-destination p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+
+
+

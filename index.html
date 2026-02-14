@@ -3,21 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio Miftahul</title>
 
     <!-- CSS External -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS\style.css">
+
+    <!-- Tailwind CSS CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
     <!-- Header Content -->
-     <header></header>
+     <header class="flex justify-between items-center p-4">
+        <!-- Logo -->
+         <div class="logo"></div>
+
+         <!-- Navigation Menu -->
+          <nav class="flex">
+                <a class=" border rounded p-2" href="#home-page">Home</a>
+                <a class=" border rounded p-2" href="#our-package">Our Package</a>
+                <a class=" border rounded p-2" href="#contact-layout">Call Us</a>
+          </nav>
+     </header>
+
+     <hr class="garis">
 
      <!-- Main Content -->
-      <main></main>
+      <main>
+        <!-- Home Page -->
+         <section id="home-page" class="min-h-[200px] text-center content-center">
+            <h1 class="text-4xl font-bold" id="welcome-speech">You Trusted Travel Agent's</h1>
+            <p class="mt-9 text-2xl text-gray-500">Your happiness is our happiness</p>
+         </section>
+
+        <section id="contact-layout">
+            <!-- Testimoni (Layout Kiri) -->
+             <div class="left-panel">
+                <div class="testimoni-image"></div>
+            <div class="testimoni">
+                <p class="quote">
+                    "Liburan jadi menyenangkan bersama Travel Agent!"
+                </p>
+            <div class="author-wrap">
+                <div class="foto-profil"></div>
+                <div class="author">
+                    <strong>Florence Hughes</strong>
+                    <p><i>Ibu Rumah Tangga, 28</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- Contact (Layout Kanan) -->
+             <div class="contact-us">
+                <h2 style="font-size: 20px; margin-top: 40px; margin-left: 40px;"><b>Contact Us</b></h2>
+                <h2 style=" margin: 20px; margin-left: 40px;">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</h2>
+                <form id="contactForm">
+                    <label style="font-size: 14px; margin: 20px; margin-left: 40px;"><b>Your Name:</b></label>
+                    <input type="text" class="input-box" id="nama" required>
+
+                    <label style="font-size: 14px; margin: 20px; margin-left: 40px;"><b>Email Address:</b></label>
+                    <input type="email" class="input-box" id="email" required>
+                    
+                    <label style="font-size: 14px; margin: 20px; margin-left: 40px;"><b>What are you interested in?</b></label>
+                    <div class="input-row">
+                        <input type="text" class="textbox" placeholder="Select option">
+                        <div>
+                            <div class="select-wrap">
+                                <select class="selectbox" style="margin-left: -4px; height: 55px; width: 45px; border-radius: 12px;border: 3px solid #cfd8e3;background-color:white;outline: none;">
+                                    <option value="" selected hidden></option>
+                                    <option>Bali</option>
+                                    <option>Jepang</option>
+                                    <option>Singapura</option>
+                                    <option>Malaysia</option>
+                                    <option>Thailand</option>
+                                    <option>Kamboja</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button style="margin-left: 40px; width: 320px;" type="submit">SEND</button>
+                </form>
+        </section>
+        <section class="features">
+            <p class="font-bold" style="margin-top: -60px; margin-left: 230px; justify-content: left;">Use this space to provide users with more information</p> 
+            <p class="font-bold" style="margin-left: 230px; justify-content: left;">about your offer. Consider it a follow-up to your headline</p>
+            <p class="font-bold" style="margin-left: 230px; justify-content: left;">and explain the benefits of your service or product</p>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="icon-penomoran" style="background-image: url(https://diak46rl5chc7.cloudfront.net/orgs/132120/contents/wj97fk6wfxz3z0f1/w460_wj97fk6wfxz3z0f1.png);"></div>
+                    <div class="feature-text" style="margin-top: 15px;">Paket wisata pilihan ke Bali dan destinasi internasional populer dengan itinerary optimal, sehingga perjalanan Anda lebih padat pengalaman tanpa ribet mengatur sendiri.</div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon-penomoran" style="background-image: url(https://diak46rl5chc7.cloudfront.net/orgs/132120/contents/gxs4q42zhevzzzaw/w460_gxs4q42zhevzzzaw.png);"></div>
+                    <div class="feature-text" style="margin-top: 15px;">Layanan pemesanan terpadu (tiket, hotel, dan tur) dengan dukungan tim responsif, membuat proses booking lebih cepat, aman, dan nyaman.</div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="icon-penomoran" style="background-image: url(https://diak46rl5chc7.cloudfront.net/orgs/132120/contents/dcxg61hmoq5u8r3y/w460_dcxg61hmoq5u8r3y.png);"></div>
+                    <div class="feature-text" style="margin-top: 15px;">Harga transparan dan fleksibel dengan berbagai opsi paket, membantu Anda menikmati liburan impian sesuai budget tanpa biaya tersembunyi.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Package Page -->
+        <section class="tittle-our-package">
+            <h1 class="text-4xl font-bold text-center content-center" id="our-package">Our Package</h1>
+        </section>
+
+        <section class="destination">
+            <div class="list-destination">
+                <div class="icon" style="background-image: url(https://www.shutterstock.com/image-vector/bali-indonesia-landscape-silhouette-shapes-600nw-2472564937.jpg);"></div>
+                <h3 style="margin-left: 290px;">Bali</h3>
+                <p class="text-center content-center" style="max-width: 400px; margin-left: 200px; margin-right: -80px;">Menawarkan kombinasi pantai eksotis, budaya tradisional yang kuat, wisata alam, dan wisata kuliner</p>
+            </div>
+
+            <div class="list-destination">
+                <div class="icon" style="margin-left: 140px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDMByswAybXBOBJ4Bl6lXfWn4vFsnpx4Iusw&s);"></div>
+                <h3 style="margin-left: 180px;">Jepang</h3>
+                <p class="text-center content-center" style="max-width: 400px; margin-left: 60px; margin-right: -30px;">Memadukan teknologi modern dan tradisi klasik dalam satu perjalanan, mulai dari kota futuristik hingga kuil bersejarah dan pemandangan gunung</p>
+            </div>
+
+            <div class="list-destination">
+                <div class="icon" style="margin-left: 44px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7XQlRyt8g1GhNaI0cWHrYa57UA8MsPriD6g&s);"></div>
+                <h3 style="margin-left: 68px;">Singapura</h3>
+                <p class="text-center content-center" style="max-width: 400px; margin-left: -5px; margin-right: 90px;">Dikenal sebagai kota modern yang bersih dan tertata dengan atraksi kelas dunia, pusat belanja, serta taman kota futuristik</p>
+            </div>
+
+            <div class="list-destination">
+                <div class="icon" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqbbOY5Y1CQDjRxfasdpPXGInnEz5btP2CNw&s);"></div>
+                <h3 style="margin-left: 265px;">Malaysia</h3>
+                <p class="text-center content-center" style="max-width: 400px; margin-left: 200px; margin-right: -80px;">Menghadirkan wisata kota, alam, budaya, serta gedung pencakar langit dan pulau tropis</p>
+            </div>
+
+            <div class="list-destination">
+                <div class="icon" style="margin-left: 140px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREBHMWwwaPNFlnBycEadmBLncHB5pnfDNBMA&s);"></div>
+                <h3 style="margin-left: 173px;" style="max-width: 400px; margin-left: 60px; margin-right: -30px;">Thailand</h3>
+                <p class="text-center content-center" style="max-width: 400px; margin-left: 100px; margin-right: 10px;">Populer dengan pantai indah, wisata kuil, serta street food yang terkenal</p>
+            </div>
+
+            <div class="list-destination">
+                <div class="icon" style="margin-left: 40px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBcvhaTbcWuUlVd6D-yfA7DUxzTqhxnLw_-A&s);"></div>
+                <h3 style="margin-left: 73px;">Kamboja</h3>
+                <p class="text-center content-center" style="max-width: 400px; margin-left: -5px; margin-right: 90px;">Dikenal dengan situs sejarah megah dan nilai warisan dunia</p>
+            </div>
+        </section>
+        <hr class="garis">
+
+      </main>
 
       <!-- Footer Content -->
-       <footer></footer>
+       <footer>
+        <section class="tittle-our-package">
+            <h1 class="text-4xl font-bold text-center content-center" id="closing-argument">Best Reasons to Choose Our Services</h1>
+            <p class="mt-9 text-2xl text-gray-500 text-center content-center">Kami menyediakan layanan perjalanan yang aman, praktis, dan terpercaya dengan paket lengkap dan harga transparan, sehingga Anda bisa menikmati liburan tanpa repot</p>
+        </section>
+        <hr class="garis">
+
+        <section class="tittle-our-package">
+            <h2 class="mt-9 text-2xl text-gray-500 text-center content-center">Terms of Service || Privacy Policy</h2>
+            <h2 class="mt-9 text-2xl text-gray-500 text-center content-center"><sup>©</sup>2026</h2>
+        </section>
+       </footer>
 
        <!-- JavaScripts External -->
         <script src="js/script.js"></script>
